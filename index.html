@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            max-width: 100%;
+            max-height: 100%;
+            justify-content: center;
+        }
+        #main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            width: auto;
+            max-width: 100%;
+        }
+        #google-logo{
+            position: relative;
+            max-width: 60%;
+            width: 40em;
+            margin:0 auto;
+            flex-grow: 1;
+        }
+        #search-box{
+            
+            position: relative;
+            display:flex;
+            flex-direction: row;
+            max-width:100%;
+            width:60em;
+            height:5em;
+            border-style: solid; 
+            border-color: rgba(0,0,0,.5);
+            border-radius: 3em;
+            flex-grow: 2;
+            align-self: center;
+        }
+        #form{
+            position: relative;
+            border-style: none;
+            align-self: center;
+            margin-right: 1em;
+            margin-left: 1em;
+            font-size: 2.5em;
+            
+        }
+        #glass{
+            width:2em;
+            height: 2em;
+            margin-left: 2em;
+            align-self: center;
+            opacity: 0.3;
+        }
+        #search-box:hover{
+            box-shadow: 0px 0px 6px 1px #7f7f7f;
+        }
+        #buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        
+        #GButton{
+            right: 1em;
+            margin: 2em 2em 2em 2em;
+            padding: 1em 1em 1em 1em;
+            font-size: 2em;
+            background-color:rgba(0,0,0,.03);
+            border-radius: 10px;
+            border-style: none;
+        }
+        #GButton:hover{
+            box-shadow: 0px 0px 6px 1px #7f7f7f;
+        }
+
+        #LButton:hover{
+            box-shadow: 0px 0px 6px 1px #7f7f7f;
+        }
+
+        #LButton{
+            position: relative;
+            margin: 2em 2em 2em 2em;
+            padding: 1em 1em 1em 1em;
+            font-size: 2em;
+            background-color:rgba(0,0,0,.03);
+            border-radius: 10px;
+            border-style: none;
+        }
+
+        .delete-bullet{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #ul1{
+            display: flex;
+            position:absolute;
+            right: 1em;
+            flex-direction: row;
+            align-content: space-evenly;
+            padding-top: 1em;
+            gap: 1em;
+            transform: scale(1.3);
+            top: 1em;
+            max-height: 10%;
+        }
+
+       .float-right{
+            position: fixed;
+            float: left;
+            background-color: rgba(0,0,0,.03);
+        }
+        .floating-list{
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+        }
+    </style>
+</head>
+
+<body> 
+    <div id="nav-bar">
+        <ul id="ul1" class="delete-bullet">
+            <li><a href="https://mail.google.com" target="_blank" style="text-decoration: none;" ">Gmail</a></li>
+            <li><a href="https://images.google.com/" style="text-decoration: none" >Images</a></li>
+            <li><a href=""><img </a></li>
+
+        </ul>
+    </ul>
+</div>   
+<div id="main">
+        <img src="images/google2.0.0.jpeg" alt="google logo" id="google-logo">
+        <div id="search-box">
+            <img src="images/magnifying-glass-icon.png" id="glass">
+            <input type="text" id="form" action="#" >
+        </div>
+        <div id="buttons">
+            <button type="button" id="GButton">Google Search</button>
+            <button type="button" id="LButton">I'm Feeling Lucky</button>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <ul id="ul2" class="delete-bullet float-right" >
+            <li class="floating-list float-right"><a href="#" style="text-decoration: none"> Advertising</a></li>
+            <li class="floating-list float-right"><a href="#" style="text-decoration: none"> Business</a></li>
+            <li class="floating-list float-right"><a href="#" style="text-decoration: none"> About</a></li>
+            <li class="floating-list float-right"><a href="#" style="text-decoration: none"> How Search works</a></li>
+        </ul>
+
+    </div>
+</body>
+</html>
